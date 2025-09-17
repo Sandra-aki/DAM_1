@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- a) Sin atributos, solo etiquetas
+<!DOCTYPE liga [
+  <!ELEMENT liga (partido*)>
+  <!ELEMENT partido (local, visitante, golesLocal, golesVisitante)>
+  <!ELEMENT local (#PCDATA)>
+  <!ELEMENT visitante (#PCDATA)>
+  <!ELEMENT golesLocal (#PCDATA)>
+  <!ELEMENT golesVisitante (#PCDATA)>
+]>
+<liga>
+  <partido>
+    <local>Nottingham Presa</local>
+    <visitante>Inter de Mitente</visitante>
+    <golesLocal>0</golesLocal>
+    <golesVisitante>1</golesVisitante>
+  </partido>
+  <partido>
+    <local>Vodka Juniors</local>
+    <visitante>Sparta da Risa</visitante>
+    <golesLocal>3</golesLocal>
+    <golesVisitante>3</golesVisitante>
+  </partido>
+  <partido>
+    <local>Water de Munich</local>
+    <visitante>Esteaua es del grifo</visitante>
+    <golesLocal>4</golesLocal>
+    <golesVisitante>2</golesVisitante>
+  </partido>
+</liga>
+<!-- a) Sin atributos, solo etiquetas - profe
+<!DOCTYPE liga [
+  <!ELEMENT liga (partido+)>
+  <!ELEMENT partido (local, visitante)>
+  <!ELEMENT local (nombre, goles)>
+  <!ELEMENT visitante (nombre, goles)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT goles (#PCDATA)>
+]>
+<liga>
+  <partido>
+    <local>
+      <nombre>atleti</nombre>
+      <goles>7</goles>
+    </local>
+    <visitante>
+      <nombre>Barça</nombre>
+      <goles>3</goles>
+    </visitante>
+  </partido>
+  <partido>
+    <local>
+      <nombre>Real Madrid</nombre>
+      <goles>5</goles>
+    </local>
+    <visitante>
+      <nombre>Otro</nombre>
+      <goles>4</goles>
+    </visitante>
+  </partido>
+</liga>
+<!-- b) goles como atributos
+<!DOCTYPE liga [
+  <!ELEMENT liga (partido*)>
+  <!ELEMENT partido (local, visitante)>
+  <!ATTLIST partido golesLocal CDATA #REQUIRED>
+  <!ATTLIST partido golesVisitante CDATA #REQUIRED>
+  <!ELEMENT local (#PCDATA)>
+  <!ELEMENT visitante (#PCDATA)>
+]>
+<liga>
+  <partido golesLocal="0" golesVisitante="1">
+    <local>Nottingham Presa</local>
+    <visitante>Inter de Mitente</visitante>
+  </partido>
+  <partido golesLocal="3" golesVisitante="3">
+    <local>Vodka Juniors</local>
+    <visitante>Sparta da Risa</visitante>
+  </partido>
+  <partido golesLocal="4" golesVisitante="2">
+    <local>Water de Munich</local>
+    <visitante>Esteaua es del grifo</visitante>
+  </partido>
+</liga>
+<!-- b) goles como atributos - profe
+<!DOCTYPE liga [
+  <!ELEMENT liga (partido*)>
+  <!ELEMENT partido (local, visitante)>
+  <!ELEMENT local (nombre)>
+  <!ATTLIST local goles CDATA #REQUIRED>
+  <!ELEMENT visitante (nombre)>
+  <!ATTLIST visitante goles CDATA #REQUIRED>
+  <!ELEMENT nombre (#PCDATA)>
+]>
+<liga>
+  <partido>
+    <local goles="7">
+      <nombre>atleti</nombre>
+    </local>
+    <visitante goles="4">
+      <nombre>barça</nombre>
+    </visitante>
+  </partido>
+  <partido>
+    <local goles="6">
+      <nombre>Real Madrid</nombre>
+    </local>
+    <visitante goles="2">
+      <nombre>Otro</nombre>
+    </visitante>
+  </partido>
+</liga>
+<!-- Todo como atrinbutos
+<!DOCTYPE liga [
+  <!ELEMENT liga (partido+)>
+  <!ELEMENT partido EMPTY>
+  <!ATTLIST partido
+    local CDATA #REQUIRED
+    visitante CDATA #REQUIRED
+    golesLocal CDATA #REQUIRED
+    golesVisitante CDATA #REQUIRED
+  >
+]>
+<liga>
+  <partido local="Nottingham Presa" visitante="Inter de Mitente" golesLocal="0" golesVisitante="1" />
+  <partido local="Vodka Juniors" visitante="Sparta da Risa" golesLocal="3" golesVisitante="3" />
+  <partido local="Water de Munich" visitante="Esteaua es del grifo" golesLocal="4"
+    golesVisitante="2" />
+</liga>
+-->

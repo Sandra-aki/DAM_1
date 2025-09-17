@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Realiza un ejercicio XML, Equipos de Futbol, que tendran nombre, ciudad, entrenador, y
+jugadores. Teniendo en cuenta de que pueden existir mas de un jugador, indicaremos donde juega,
+nombre, y nacionalidad-->
+<Equipos>
+    <Equipo>
+        <Nombre>Real Madrid</Nombre>
+        <Ciudad>Madrid</Ciudad>
+        <Entrenador>Carlo Ancelotti</Entrenador>
+        <Jugadores>
+            <Jugador>
+                <Posición>Portero</Posición>
+                <Nombre>Thibaut Courtois</Nombre>
+                <Nacionalidad>Bélgica</Nacionalidad>
+            </Jugador>
+            <Jugador>
+                <Posición>Defensa</Posición>
+                <Nombre>David Alaba</Nombre>
+                <Nacionalidad>Austria</Nacionalidad>
+            </Jugador>
+            <Jugador>
+                <Posición>Delantero</Posición>
+                <Nombre>Vinícius Jr.</Nombre>
+                <Nacionalidad>Brasil</Nacionalidad>
+            </Jugador>
+        </Jugadores>
+    </Equipo>
+    <Equipo>
+        <Nombre>Barcelona</Nombre>
+        <Ciudad>Barcelona</Ciudad>
+        <Entrenador>Xavi Hernández</Entrenador>
+        <Jugadores>
+            <Jugador>
+                <Posición>Portero</Posición>
+                <Nombre>Marc-André ter Stegen</Nombre>
+                <Nacionalidad>Alemania</Nacionalidad>
+            </Jugador>
+            <Jugador>
+                <Posición>Defensa</Posición>
+                <Nombre>Ronald Araújo</Nombre>
+                <Nacionalidad>Uruguay</Nacionalidad>
+            </Jugador>
+            <Jugador>
+                <Posición>Delantero</Posición>
+                <Nombre>Robert Lewandowski</Nombre>
+                <Nacionalidad>Polonia</Nacionalidad>
+            </Jugador>
+        </Jugadores>
+    </Equipo>
+</Equipos>

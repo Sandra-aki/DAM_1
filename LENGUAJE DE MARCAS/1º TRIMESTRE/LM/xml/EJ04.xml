@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Crea un catálogo de Películas con xml:
+    · Titulo
+    · Director
+    · Año de lanzamiento
+    · Genero 
+-->
+<catalogo>
+    <pelicula>
+        <titulo>Train to Busan</titulo>
+        <director>Yeon Sang-ho</director>
+        <anio>2016 </anio>
+        <genero>Acción/Terror</genero>
+    </pelicula>
+    <pelicula>
+        <titulo>Capitán América: el primer vengador</titulo>
+        <director>Stan Lee/Joe Johnston</director>
+        <anio>2011</anio>
+        <genero> Acción/Ciencia ficción</genero>
+    </pelicula>
+</catalogo>
+<!--
+<catalogo>
+    <pelicula titulo="Train to Busan" director="Yeon Sang-ho" anio="2016" genero="Acción/Terror"></pelicula>
+    <pelicula titulo="Capitán América: el primer vengador" director="Stan Lee/Joe Johnston" anio="2011" genero="Acción/Ciencia ficción"></pelicula>
+</catalogo>
+-->

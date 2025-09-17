@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="EJ06.css" type="text/css"?>
+<!-- XML: Hacer un programa de animales:
+    ·Animal:
+        · Nombre (En css de un color y un tamaño de letra)
+        · Numero de Patas (En css de otro color y un tamaño de letra)
+-->
+<ProgramaAnimales>
+    <animal>
+        <nombre>Perro</nombre>
+        <patas>4</patas>
+    </animal>
+    <animal>
+        <nombre>Gato</nombre>
+        <patas>4</patas>
+    </animal>
+    <animal>
+        <nombre>Araña</nombre>
+        <patas>8</patas>
+    </animal>
+    <animal>
+        <nombre>Gallina</nombre>
+        <patas>2</patas>
+    </animal>
+</ProgramaAnimales>

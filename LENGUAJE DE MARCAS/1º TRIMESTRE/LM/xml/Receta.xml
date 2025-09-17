@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Receta.css" type="text/css"?>
+<!-- Realizar un ejercicio en XML, de recetas de Cocina.
+Por una parte tendremos la receta de tarta de manzana, que tiene los siguientes ingredientes:
+    - 3 Manzanas
+    - 200 gramos de Harina
+    - 100 gramos de Azúcar
+    - 100 gramos de Mantequilla
+    - 2 huevos
+Los pasos serían:
+    1. Pelar y cortar las manzanas en rodajas finas
+    2. Mezclar la harina, el azúcar y la mantequilla hasta obtener una masa desmigada.
+    3. Batir los huevos y agregarlos a la masa
+    4. Colocar las rodajas de manzana en un molde y cubrir con la masa.
+    5. Hornear a 180º durante 30 minutos o hasta que esté dorada.
+
+Por otra parte tenemos la receta de la Ensalada César que tiene los siguientes ingredientes:
+    - 1 lechuga
+    - 50 gr de Coutones
+    - 30 gr de Queso Parmesano
+    - 2 filetes Pollo a la Parrilla
+Los pasos serían:
+    1. Lavar y cortar la lechuga en trozos
+    2. Agregar croutones y el queso parmesano
+    3. Cortar los filetes de pollo a la parrilla en tiras y agregar a la ensalada
+    4. Mezclar bien todos los ingredientes.
+    5. Aliñar con salsa César y servir.
+-->
+<recetario>
+    <receta nombre="Tarta de Manzana">
+        <ingredientes>
+            <ingrediente cantidad="3">Manzanas</ingrediente>
+            <ingrediente cantidad="200g">Harina</ingrediente>
+            <ingrediente cantidad="100g">Azúcar</ingrediente>
+            <ingrediente cantidad="100g">Mantequilla</ingrediente>
+            <ingrediente cantidad="2">Huevos</ingrediente>
+        </ingredientes>
+        <preparacion>
+            <paso>Pelar y cortar las manzanas en rodajas finas.</paso>
+            <paso>Mezclar la harina, el azúcar y la mantequilla hasta obtener una masa
+                desmigada.</paso>
+            <paso>Batir los huevos y agregarlos a la masa.</paso>
+            <paso>Colocar las rodajas de manzana en un molde y cubrir con la masa.</paso>
+            <paso>Hornear a 180º durante 30 minutos o hasta que esté dorada.</paso>
+        </preparacion>
+    </receta>
+
+    <receta nombre="Ensalada César">
+        <ingredientes>
+            <ingrediente cantidad="1">Lechuga</ingrediente>
+            <ingrediente cantidad="50g">Croutones</ingrediente>
+            <ingrediente cantidad="30g">Queso Parmesano</ingrediente>
+            <ingrediente cantidad="2">Filetes de Pollo a la Parrilla</ingrediente>
+        </ingredientes>
+        <preparacion>
+            <paso>Lavar y cortar la lechuga en trozos.</paso>
+            <paso>Agregar croutones y el queso parmesano.</paso>
+            <paso>Cortar los filetes de pollo a la parrilla en tiras y agregar a la
+                ensalada.</paso>
+            <paso>Mezclar bien todos los ingredientes.</paso>
+            <paso>Aliñar con salsa César y servir.</paso>
+        </preparacion>
+    </receta>
+</recetario>
+
+<!-- SIN ATRIBUTOS:
+<recetario>
+    <receta>
+        <nombre>Tarta de Manzana</nombre>
+        <ingredientes>
+            <ingrediente>
+                <nombre>Manzanas</nombre>
+                <cantidad>3</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Harina</nombre>
+                <cantidad>200g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Azúcar</nombre>
+                <cantidad>100g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Mantequilla</nombre>
+                <cantidad>100g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Huevos</nombre>
+                <cantidad>2</cantidad>
+            </ingrediente>
+        </ingredientes>
+        <preparacion>
+            <paso>Pelar y cortar las manzanas en rodajas finas.</paso>
+            <paso>Mezclar la harina, el azúcar y la mantequilla hasta obtener una masa
+                desmigada.</paso>
+            <paso>Batir los huevos y agregarlos a la masa.</paso>
+            <paso>Colocar las rodajas de manzana en un molde y cubrir con la masa.</paso>
+            <paso>Hornear a 180º durante 30 minutos o hasta que esté dorada.</paso>
+        </preparacion>
+    </receta>
+
+    <receta>
+        <nombre>Ensalada César</nombre>
+        <ingredientes>
+            <ingrediente>
+                <nombre>Lechuga</nombre>
+                <cantidad>1</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Croutones</nombre>
+                <cantidad>50g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Queso Parmesano</nombre>
+                <cantidad>30g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Filetes de Pollo a la Parrilla</nombre>
+                <cantidad>2</cantidad>
+            </ingrediente>
+        </ingredientes>
+        <preparacion>
+            <paso>Lavar y cortar la lechuga en trozos.</paso>
+            <paso>Agregar croutones y el queso parmesano.</paso>
+            <paso>Cortar los filetes de pollo a la parrilla en tiras y agregar a la
+                ensalada.</paso>
+            <paso>Mezclar bien todos los ingredientes.</paso>
+            <paso>Aliñar con salsa César y servir.</paso>
+        </preparacion>
+    </receta>
+</recetario>
+-->

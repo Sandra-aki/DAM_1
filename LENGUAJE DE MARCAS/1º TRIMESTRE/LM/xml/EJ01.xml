@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Etiquetas: Mujer, nombre, fecha, lugar / ciudad, persona-->
+<persona>
+    <nombre>Elsa</nombre>
+    <mujer /> <!-- Etiqueta vacia porque termina con /, nos identifica al contenido del elemento-->
+    <fecha_de_nacimiento>
+        <dia>18</dia>
+        <mes>6</mes>
+        <anio>1996</anio>
+    </fecha_de_nacimiento>
+    <ciudad>Pamplona</ciudad>
+</persona>

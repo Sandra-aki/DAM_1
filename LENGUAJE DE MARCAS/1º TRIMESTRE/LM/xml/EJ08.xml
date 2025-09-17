@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mensaje>
+    <contador cont="1/2">
+        <destino>Elisa</destino>
+        <origen>Pedro</origen>
+        <tipo>Recordatorio</tipo>
+        <contenido>No olvides la cita.</contenido>
+    </contador>
+
+    <contador cont="2/2">
+        <destino>Juan</destino>
+        <origen>Francisco</origen>
+        <tipo>Cita</tipo>
+        <contenido>Quedamos a comer en el Restaurante de abajo.</contenido>
+    </contador>
+
+</mensaje>

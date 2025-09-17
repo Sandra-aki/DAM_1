@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Escribir un doc XML que almacene::
+    · Hechos Historicos:
+        · Descripcion de cada hecho: (Descripcion es el atributo)
+            · IBM da a conocer el PC
+            · Se funda Google
+            · Se funda Facebook
+        · Fecha:
+            · Dia
+            · Mes
+            · Año
+-->
+<!-- 
+<Hechos_Historicos>
+    <hecho descripcion="IBM da a conocer el pc">
+        <fecha dia="12" mes="8" anyo="1981"></fecha>
+    </hecho>
+    <hecho descripcion="Se funda Google">
+        <fecha dia="4" mes="9" anyo="1998"></fecha>
+    </hecho>
+    <hecho descripcion="Se funda Facebook">
+        <fecha dia="9" mes="2" anyo="2004"></fecha>
+    </hecho>
+</Hechos_Historicos>
+-->
+<HechosHistoricos>
+    <hecho descripcion="IBM da a conocer el PC">
+        <fecha>
+            <dia>12</dia>
+            <mes>8</mes>
+            <anio>1981</anio>
+        </fecha>
+    </hecho>
+    <hecho descripcion="Se funda Google">
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <anio>1998</anio>
+        </fecha>
+    </hecho>
+    <hecho descripcion="Se funda Facebook">
+        <fecha>
+            <dia>9</dia>
+            <mes>2</mes>
+            <anio>2004</anio>
+        </fecha>
+    </hecho>
+</HechosHistoricos>

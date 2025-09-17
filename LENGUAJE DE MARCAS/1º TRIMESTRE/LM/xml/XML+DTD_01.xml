@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Crea un archivo XML que represente una biblioteca virtual. La biblioteca debe contener tanto
+libros como revistas, cada uno con su información correspondiente. Sigue las instrucciones y
+utiliza
+el DTD proporcionado para validar el documento:
+
+    1. Crea el documento XML que cumpla con el DTD proporcionado para una biblioteca.
+    2. Agrega al menos dos libros a la biblioteca. Cada libro debe tener in título, autor, editorial,
+    anio de publicacion, precio, u una descripcion opcional.
+    3. Asegurate de incluir también una imagen para cada libro
+    4. Agrega al menos una revista a la biblioteca. La revista debe tener un título, editorial, anio de
+    publicacion, precio, y al menos un articulo.
+    5. Cada articulo debe tener un título, autor y contenido.
+-->
+<!--biblioteca.dtd-->
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro*, revista*)>
+
+    <!ELEMENT libro (titulo, autor, editorial, anio_publicacion, precio, descripcion?, imagen)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT anio_publicacion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT imagen (#PCDATA)>
+
+    <!ELEMENT revista (titulo, editorial, anio_publicacion, precio, articulo+)>
+    <!ELEMENT articulo (titulo, autor, contenido)>
+    <!ELEMENT contenido (#PCDATA)>
+]>
+<biblioteca>
+    <libro>
+        <titulo></titulo>
+        <autor></autor>
+        <editorial></editorial>
+        <anio_publicacion></anio_publicacion>
+        <precio></precio>
+        <descripcion></descripcion>
+        <imagen></imagen>
+    </libro>
+
+    <libro>
+        <titulo></titulo>
+        <autor></autor>
+        <editorial></editorial>
+        <anio_publicacion></anio_publicacion>
+        <precio></precio>
+        <descripcion></descripcion>
+        <imagen></imagen>
+    </libro>
+
+    <revista>
+        <titulo></titulo>
+        <editorial></editorial>
+        <anio_publicacion></anio_publicacion>
+        <precio></precio>
+        <articulo>
+            <titulo></titulo>
+            <autor>¡</autor>
+            <contenido></contenido>
+        </articulo>
+    </revista>
+</biblioteca>

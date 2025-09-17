@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="EJ07.css" type="text/css"?>
+<!-- Realizar un ejercicio xml de mezcla de colores:
+    - Mezcla de Colores:
+        -  Mezcla
+            - Rojo y Amarillo
+            - Negro y blanco
+            - Amarillo, azul y blanco
+        - Resultados (atributo combinacion)
+            - Naranja
+            - Gris
+            - Verde Claro
+-->
+<MezclaColores>
+    <mezcla combinacion="naranja">Rojo y Amarillo</mezcla>
+    <mezcla combinacion="gris">Megro y Blanco</mezcla>
+    <mezcla combinacion="verde_claro">Amarillo, Azul y Blanco</mezcla>
+</MezclaColores>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 2. Crea un archivo XML que contenga una lista de libros con la siguiente estructura:
+    · Titulo del libro
+    · Autor
+    · Año de publicacion
+    · Editorial -->
+
+<biblioteca>
+    <libro titulo="Percy Jackson: The Lightning Thief" autor="Rick Riordan" anio="2005" editorial="Miramax Books"></libro>
+    <libro titulo="Harry Potter and the Sorcerer's Stone" autor="J.K. Rowling" anio="1997" editorial="Bloomsbury"></libro>
+    <libro titulo="The Hobbit" autor="J.R.R. Tolkien" anio="1937" editorial="George Allen and Unwin"></libro>
+</biblioteca>
+
+<!-- SIN ATRIBUTOS:
+<biblioteca>
+    <libro>
+        <titulo>Percy Jackson: The Lightning Thief</titulo>
+        <autor>
+            <nombre>Rick</nombre>
+            <apellidos>Riordan</apellidos>
+        </autor>
+        <fecha>
+            <dia>1</dia>
+            <mes>6</mes>
+            <anio>2005</anio>
+        </fecha>
+        <editorial>
+            <nombre>Miramax Books</nombre>
+        </editorial>
+    </libro>
+    <libro>
+        <titulo>Harry Potter and the Sorcerer's Stone</titulo>
+        <autor>
+            <nombre>J.K.</nombre>
+            <apellidos>Rowling</apellidos>
+        </autor>
+        <fecha>
+            <dia>26</dia>
+            <mes>6</mes>
+            <anio>1997</anio>
+        </fecha>
+        <editorial>
+            <nombre>Bloomsbury</nombre>
+        </editorial>
+    </libro>
+    <libro>
+        <titulo>The Hobbit</titulo>
+        <autor>
+            <nombre>J.R.R.</nombre>
+            <apellidos>Tolkien</apellidos>
+        </autor>
+        <fecha>
+            <dia>21</dia>
+            <mes>9</mes>
+            <anio>1937</anio>
+        </fecha>
+        <editorial>
+            <nombre>George Allen and Unwin</nombre>
+        </editorial>
+    </libro>
+</biblioteca>
+-->

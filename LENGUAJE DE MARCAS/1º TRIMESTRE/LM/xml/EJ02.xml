@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Haz un XML para un menu de restaurante con platos y sus precios-->
+<menu>
+    <plato>
+        <nombre>Costillas con patatas</nombre>
+        <precio>30.32</precio>
+    </plato>
+    <plato>
+        <nombre>Arroz tres Delicias</nombre>
+        <precio>25.73</precio>
+    </plato>
+</menu>
+
+<!-- ATAJOS: F2 para renombrar etiquetas-->

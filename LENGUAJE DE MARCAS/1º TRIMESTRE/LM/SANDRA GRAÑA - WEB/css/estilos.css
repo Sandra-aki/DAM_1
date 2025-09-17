@@ -1,0 +1,729 @@
+/* GENERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+h1 {
+    color: black;
+    font-size: 12px;
+    float: right;
+    font-weight: 10px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilos Generales para el contenido principal footer - html */
+main .legal-notice,
+main .location,
+main .privacy-policy {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #a075c2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------------------ CABECERA ------------------------ */
+header {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+nav {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header img {
+    padding: 8px 10px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+
+nav li a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+}
+
+nav li a:hover {
+    color: #5E5D6E;
+}
+
+/* ------------------------ PARALLAX ------------------------ */
+.parallax {
+    background-image: url("img/portada.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax img {
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+/* ------------------------ SECTION 1 ------------------------ */
+#btn-fixed {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 150px auto;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+p.big {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.intro h2,
+.intro p,
+.intro button {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 40px 15px 40px;
+    background-color: black;
+    font-size: 1em;
+    color: white;
+    transition: background 0.5s linear;
+}
+
+button:hover {
+    background-color: #4A4959;
+}
+
+.fa-whatsapp {
+    color: green;
+    font-size: 3em;
+}
+
+/* ------------------------ INFO BOX ------------------------ */
+.info-box {
+    background-color: #1C1D22;
+    margin: 0px auto;
+    padding: 110px 0 110px 0;
+    color: white;
+    text-align: center;
+}
+
+.info-box h2 {
+    margin-bottom: 30px;
+}
+
+/* ------------------------ FLEX P ------------------------ */
+#flex-p {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flex-p p {
+    padding: 30px;
+    max-width: 300px;
+}
+
+.fa-star,
+.fa-thumbs-up,
+.fa-check {
+    font-size: 2.7em;
+    display: block;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* ------------------------ DESCRIPTION BOX ------------------------ */
+.description-box {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.description-box h2 {
+    text-align: center;
+}
+
+/* ------------------------ IMG CONTAINER ------------------------ */
+.img-container {
+    margin: 20px 0 80px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.img-container img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* ------------------------ DESCRIPCIÓN DE CADA MIEMBRO ------------------------ */
+.img-container p {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.6em;
+    color: #333;
+    padding-top: 10px;
+}
+
+/* ------------------------ SABER MÁS BOTÓN ------------------------ */
+.boton-saber-mas {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #a075c2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-saber-mas:hover {
+    background-color: #400365c8;
+}
+
+/* ------------------------ RESPONSIVE DESIGN ------------------------ */
+@media (max-width: 768px) {
+    .img-container {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .description-box h2 {
+        font-size: 28px;
+    }
+
+    .img-container p {
+        font-size: 1em;
+    }
+}
+
+/* ------------------------ FOOTER ------------------------ */
+.footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1 1 300px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #b693c5;
+}
+
+.footer-column p {
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #c392d2;
+}
+
+.social-icons a {
+    color: #f0f0f0;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d2b4f3;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #4c086c;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ------------------------ QUIZZ ------------------------ */
+.quiz-container {
+    max-width: 700px;
+    margin: 3rem auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.question {
+    margin-bottom: 2rem;
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.question label {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question input[type="radio"] {
+    display: none;
+}
+
+.question input[type="radio"]:checked+label {
+    background-color: #d1c4e9;
+}
+
+.submit-msg {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* ------------------------ IMG CONTAINER (Imagenes) ------------------------ */
+.img-container img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* ------------------------ GRID ARTICULOS ------------------------ */
+.grid-articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+/* ------------------------ CARD ------------------------ */
+.card {
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-texto {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-texto h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------------ SABER MÁS BOTÓN ------------------------ */
+.boton-saber-mas {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #d1c4e9;
+    color: #400365c8;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-saber-mas:hover {
+    background-color: #400365c8;
+}
+
+/* ------------------------ SECCIÓN DE ÁLBUMES ------------------------ */
+.album-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.album-card {
+    width: 280px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.album-card:hover {
+    transform: scale(1.03);
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.album-card p {
+    padding: 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+
+/* SECCIÓN DE CANCIONES */
+.song-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.song-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.song-section p.big {
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.song-card {
+    width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.song-card:hover {
+    transform: translateY(-5px);
+}
+
+.song-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.song-card p {
+    font-size: 14px;
+    color: #444;
+}
+
+/* ------------------------ Formulario de contacto ------------------------ */
+.formulario-contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #d1c4e9;
+}
+
+.formulario-contacto button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #d1c4e9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #d1c4e9;
+}
+
+/* ------------------------ Estilos para la página de miembros ------------------------ */
+/* Estilos para la biografía */
+.member-page .bio-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.member-page .bio-details h3 {
+    font-size: 28px;
+    color: #2c2c2c;
+}
+
+.member-page .bio-details .bio-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.member-page #img {
+    width: 50%;
+}
+
+/* Estilos para la tabla de información */
+.member-page .info-table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.member-page .info-table h3 {
+    font-size: 24px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.member-page .info-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.member-page .info-table th,
+.member-page .info-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.member-page .info-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.member-page .info-table td {
+    color: #555;
+}
+
+/* Estilos para las canciones en solitario */
+.member-page .solo-songs {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.member-page .solo-songs h3 {
+    font-size: 30px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.member-page .solo-songs .song-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member-page .solo-songs .song {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-page .solo-songs .song img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.member-page .solo-songs .song p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.member-page .solo-songs .song strong {
+    color: #333;
+}
+
+/* Estilos para las frases célebres */
+.member-page .quotes {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.member-page .quotes h3 {
+    font-size: 28px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.member-page .quotes .quote-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-page .quotes .quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+}
+
+.member-page .quotes .author {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}

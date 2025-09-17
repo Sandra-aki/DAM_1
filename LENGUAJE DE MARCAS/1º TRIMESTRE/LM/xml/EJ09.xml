@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Realiza un ejercicio XML, que trate de los marcadores de internet, que contienen paginas, con
+su nombre, descripcion y url.-->
+<Marcadores>
+    <pagina>
+        <Nombre>Google</Nombre>
+        <Descripción>Motor de búsqueda más utilizado en el mundo.</Descripción>
+        <URL>https://www.google.com</URL>
+    </pagina>
+    <pagina>
+        <Nombre>A03</Nombre>
+        <Descripción>Free, open-source website that hosts fanworks like fanfiction, fanart, and fan videos. </Descripción>
+        <URL>https://archiveofourown.org/</URL>
+    </pagina>
+</Marcadores>

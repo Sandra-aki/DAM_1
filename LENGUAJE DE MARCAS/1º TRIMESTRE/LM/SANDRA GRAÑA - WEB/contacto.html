@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contacto - BTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" aria-label="Inicio">
+                <img src="css/img/logo.png" alt="Logo Army" width="80" height="50" />
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="miembros.html">Miembros</a></li>
+                <li><a href="album.html">Álbum</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Contacto</h2>
+            <p class="big">¿Tienes alguna duda o quieres enviarnos un mensaje? Completa el siguiente formulario.</p>
+        </section>
+
+        <section class="formulario-contacto">
+            <form action="mailto:sandra@ejemplo.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="tuemail@ejemplo.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre la Web</h3>
+                <p>Un sitio hecho por y para ARMY. Aquí encuentras info, curiosidades y todo sobre BTS y sus miembros.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ubicacion.html">Dónde Estamos</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BTS Fan Page | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

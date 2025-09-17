@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE persona [
+  <!ELEMENT persona EMPTY>
+  <!ATTLIST persona nombre CDATA #IMPLIED>ATTLIST SE RELACIONA CON LOS ATRIBUTOS, IMPLIED ES OPCIONAL
+]>
+<persona nombre="03141592E"/>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pelicula [
+  <!ELEMENT pelicula EMPTY>
+  <!ATTLIST pelicula titulo CDATA #IMPLIED>
+]>
+<pelicula titulo="La diligencia"/>
+
+<!DOCTYPE cuadros [
+    <!ELEMENT cuadros (cuadro*)>
+    <!ELEMENT cuadro EMPTY>
+    <!ATTLIST cuadro titulo ID #REQUIRED>
+    <!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+<cuadros>
+    <cuadro titulo="Adán" autor="Alberto Durero" />
+    <cuadro autor="Lucas Cranach, el viejo" titulo="Eva" />
+</cuadros>
+<!DOCTYPE listaCompra [
+  <!ELEMENT listaCompra (item*)>
+  <!ELEMENT item EMPTY>
+  <!ATTLIST item nombre CDATA #REQUIRED>
+  <!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+<listaCompra>
+  <item nombre="leche" cantidad="12 litros" />
+  <item nombre="pan" cantidad="3 barras de cuarto" />
+</listaCompra>
+
+<!DOCTYPE futbol [
+  <!ELEMENT futbol (jugador*)>
+  <!ELEMENT jugador EMPTY>
+  <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+  <!ATTLIST jugador codigo ID #REQUIRED>
+]>
+<futbol>
+  <jugador nombre="Alfredo Di Stefano" codigo="a1"/>
+  <jugador nombre="Edison Arantes do Nascimento Pelé" codigo="b2" />
+  <jugador nombre="Diego Armando Maradona" codigo="c3" />
+  <jugador nombre="Johan Cruyff" codigo="d4" />
+</futbol>
+
+<!DOCTYPE futbol [
+    <!ELEMENT futbol ((jugador|equipo)*)>
+    <!ELEMENT jugador EMPTY>
+    <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+    <!ATTLIST jugador codigo ID #REQUIRED>
+    <!ELEMENT equipo EMPTY>
+    <!ATTLIST equipo nombre CDATA #REQUIRED>
+    <!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="ads" />
+    <jugador nombre="Edison Arantes do Nascimento" codigo="ean" />
+    <jugador nombre="Diego Armando Maradona" codigo="dam" />
+    <jugador nombre="Johan Cruyff" codigo="jc" />
+    <equipo nombre="Società Sportiva Calcio Napoli" jugadores="dam" />
+    <equipo nombre="Futbol Club Barcelona" jugadores="jc dam" />
+</futbol> -->
+<!-- a) libro.xml -->
+<!-- ERROR: el atributo autor era NMTOKEN, pero su valor contiene espacios. Se cambió a CDATA -->
+<!DOCTYPE libro [
+  <!ELEMENT libro EMPTY>
+  <!ATTLIST libro autor CDATA #REQUIRED>
+]>
+<libro autor="Mario Vargas LLosa" />
+
+<!-- b) inventores.xml -->
+<!-- ERRORES:
+     1. <!ELEMENT inventores> estaba mal definido, se corrigió como (inventor*)
+     2. El tipo ID en el atributo nombre no permite espacios ni repeticiones; se cambió a CDATA -->
+<!DOCTYPE inventores [
+  <!ELEMENT inventores (inventor*)>
+  <!ELEMENT inventor EMPTY>
+  <!ATTLIST inventor invento CDATA #REQUIRED>
+  <!ATTLIST inventor nombre CDATA #REQUIRED>
+]>
+<inventores>
+  <inventor nombre="Robert Adler" invento="Mando a distancia" />
+  <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+  <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+  <inventor invento="Fuego" />
+</inventores>
+
+<!-- c) cosas.xml -->
+<!-- ERRORES:
+     1. cosa no puede ser EMPTY si contiene texto (#PCDATA)
+     2. El atributo 'asunto' no aparece en el XML, se marcó como #IMPLIED -->
+<!DOCTYPE cosasPorHacer [
+  <!ELEMENT cosasPorHacer (cosa*)>
+  <!ELEMENT cosa (#PCDATA)>
+  <!ATTLIST cosa fecha CDATA #REQUIRED>
+  <!ATTLIST cosa asunto CDATA #IMPLIED>
+  <!ATTLIST cosa fechaLimite CDATA #REQUIRED>
+]>
+<cosasPorHacer>
+  <cosa fecha="20 de febrero de 2011" fechaLimite="1 de marzo de 2011"> Preparar ejercicios de DTDs</cosa>
+  <cosa fecha="21 de febrero de 2011" fechaLimite="5 de marzo de 2011"> Preparar tema XSLT</cosa>
+</cosasPorHacer>
+
+<!-- d) resoluciones.xml -->
+<!-- ERRORES:
+     1. resoluciones no puede ser EMPTY si contiene elementos
+     2. El elemento resolucion no estaba definido
+     3. Se cambió el atributo nombre a CDATA para permitir espacios como en "HD 1080" -->
+<!DOCTYPE resoluciones [
+  <!ELEMENT resoluciones (resolucion*)>
+  <!ELEMENT resolucion EMPTY>
+  <!ATTLIST resolucion nombre CDATA #REQUIRED>
+  <!ATTLIST resolucion alto CDATA #REQUIRED>
+  <!ATTLIST resolucion ancho CDATA #REQUIRED>
+]>
+<resoluciones>
+  <resolucion nombre="VGA" alto="480" ancho="640" />
+  <resolucion nombre="XGA" alto="1024" ancho="768" />
+  <resolucion nombre="HD 1080" alto="1920" ancho="1080" />
+</resoluciones>
+
+<!-- e) albumes.xml -->
+<!-- ERRORES:
+     1. El elemento album tenía elementos hijos (nombre, fecha), pero en el XML se usan como atributos
+     2. El atributo fecha usaba una enumeración de valores, se pone / para que sea o no y (,)-->
+<!DOCTYPE albumesMortadelo [
+  <!ELEMENT albumesMortadelo (album*)>
+  <!ELEMENT album EMPTY>
+  <!ATTLIST album nombre CDATA #REQUIRED>
+  <!ATTLIST album fecha (1969/1970/1971/1972/1973/1974) #REQUIRED>
+]>
+<albumesMortadelo>
+  <album nombre="El sulfato atómico" fecha="1969" />
+  <album nombre="La caja de diez cerrojos" fecha="1971" />
+  <album nombre="El otro yo del profesor Bacterio" fecha="1973" />
+  <album nombre="Los cacharros majaretas" fecha="1974" />
+</albumesMortadelo>
